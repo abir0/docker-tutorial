@@ -18,7 +18,7 @@ This repo contains a hands-on introduction to Docker concepts, workflows, and co
 ### [🛠️ Docker Fundamentals](#docker-fundamentals)
 
 - [Installation and Setup](#installation-and-setup)
-- [Basic Commands](#basic-commands)
+- [Essential Commands](#essential-commands-1)
 - [Dockerfile Basics](#dockerfile-basics)
 - [Image Layers](#image-layers)
 
@@ -26,7 +26,7 @@ This repo contains a hands-on introduction to Docker concepts, workflows, and co
 
 - [What is Docker Compose?](#what-is-docker-compose)
 - [docker-compose.yml Structure](#docker-composeyml-structure)
-- [Basic Commands](#basic-commands)
+- [Essential Commands](#essential-commands-2)
 - [Debugging Containers](#debugging-containers)
 
 ### [🚀 Hands-on Docker Projects](#hands-on-docker-projects)
@@ -43,7 +43,7 @@ This repo contains a hands-on introduction to Docker concepts, workflows, and co
 ### [⚡ Modern Python Tooling uv](#modern-python-tooling-uv)
 
 - [Comparison of Python Package Managers](#comparison-of-python-package-managers)
-- [Basic Commands](#basic-commands)
+- [Essential uv Commands](#essential-uv-commands)
 - [Project Setup](#project-setup-with-uv)
 - [Best Practices](#best-practices)
 - [Docker with uv](#docker-with-uv)
@@ -141,7 +141,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 docker --version
 ```
 
-<h3 id="basic-commands">💻 Basic Commands</h3>
+<h3 id="essential-commands-1">💻 Essential Commands</h3>
 
 #### 💿 Image Management
 
@@ -296,7 +296,7 @@ networks:
 - **environment**: Environment variables
 - **depends_on**: Service dependencies
 
-### Basic Commands
+<h3 id="essential-commands-2">💻 Essential Commands</h3>
 
 | Command | Description |
 |---------|-------------|
@@ -342,14 +342,6 @@ This project demonstrates how to use pre-built Docker images to quickly deploy a
 - Configure container ports and volumes
 - Use Docker Compose for simple deployments
 
-**Quick Start**:
-
-```bash
-cd 1-nginx-website
-docker compose up -d
-# Visit http://localhost:8080
-```
-
 For more details on the project, please refer to [Project 1 Documentation](1-nginx-website/README.md)
 
 <h3 id="project-2">📄 Project 2: Custom Docker PDF Generation with Python</h3>
@@ -364,15 +356,6 @@ This project shows how to build a custom Docker image for a Python-based PDF gen
 - Manage Python dependencies in containers
 - Handle file I/O in containers
 
-**Quick Start**:
-
-```bash
-cd 2-pdf-generator
-docker build -t pdf-generator .
-docker run -p 8000:8000 pdf-generator
-# API endpoint: http://localhost:8000/generate-pdf
-```
-
 For more details on the project, please refer to [Project 2 Documentation](2-pdf-generator/README.md)
 
 <h3 id="project-3">💊 Project 3: Docker Compose Medical Text Extraction Service</h3>
@@ -386,14 +369,6 @@ This advanced project demonstrates a real-world ML service using Docker Compose 
 - Design multi-container applications
 - Manage container dependencies
 - Handle persistent data
-
-**Quick Start**:
-
-```bash
-cd 3-text-extractor
-docker compose up -d
-# API endpoint: http://localhost:8000/extract
-```
 
 For more details on the project, please refer to [Project 3 Documentation](3-text-extractor/README.md)
 
