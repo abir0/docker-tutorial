@@ -1,0 +1,72 @@
+[
+    {
+        "name": "John Doe",
+        "age": 29,
+        "location": "New York",
+        "job": "Software Engineer",
+        "salary": "$90,000",
+        "contact": {
+            "email": "johndoe@example.com",
+            "phone": "(555) 123-4567"
+        },
+        "education": [
+            {
+                "degree": "B.Sc",
+                "field": "Computer Science",
+                "university": "MIT",
+                "year": "2016"
+            }
+        ],
+        "work_experience": [
+            {
+                "position": "Junior Developer",
+                "company": "Tech Corp",
+                "start_year": "2016",
+                "end_year": "2018",
+                "responsibilities": "Developed internal tools, bug fixing, and system optimization."
+            },
+            {
+                "position": "Software Engineer",
+                "company": "Innovate Ltd.",
+                "start_year": "2018",
+                "end_year": "Present",
+                "responsibilities": "Building scalable web applications and managing development teams."
+            }
+        ]
+    },
+    {
+        "name": "Jane Smith",
+        "age": 34,
+        "location": "San Francisco",
+        "job": "Data Scientist",
+        "salary": "$120,000",
+        "contact": {
+            "email": "janesmith@example.com",
+            "phone": "(555) 987-6543"
+        },
+        "education": [
+            {
+                "degree": "M.Sc",
+                "field": "Data Science",
+                "university": "Stanford University",
+                "year": "2015"
+            }
+        ],
+        "work_experience": [
+            {
+                "position": "Data Analyst",
+                "company": "DataX Solutions",
+                "start_year": "2015",
+                "end_year": "2017",
+                "responsibilities": "Analyzed datasets, created reports, and advised on data-driven decisions."
+            },
+            {
+                "position": "Senior Data Scientist",
+                "company": "AI Insights",
+                "start_year": "2017",
+                "end_year": "Present",
+                "responsibilities": "Developing machine learning models, predictive analysis, and data strategy."
+            }
+        ]
+    }
+]

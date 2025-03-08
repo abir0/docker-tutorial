@@ -1,0 +1,54 @@
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+
+  backend_api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      DB_HOST: postgres
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASS: ${DB_PASS}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+    ports:
+      - "8000:8000"
+    networks:
+      - app-network
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+
+  frontend_ui:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    environment:
+      BACKEND_URL: "http://backend_api:8000"
+    ports:
+      - "8501:8501"
+    networks:
+      - app-network
+    env_file:
+      - .env
+    depends_on:
+      - backend_api
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  postgres-data:
