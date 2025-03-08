@@ -3,6 +3,8 @@
 [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+<a name="top"></a>
+
 This repo contains a hands-on introduction to Docker concepts, workflows, and commands for ML Engineers. It covers the basics of Docker, and Docker Compose through practical examples and best practices. The tutorial includes three hands-on projects demonstrating usage of Docker. It also introduces modern Python tooling with `uv` for fast and reliable dependency management.
 
 ## Table of Contents
@@ -51,6 +53,10 @@ This repo contains a hands-on introduction to Docker concepts, workflows, and co
 ### [📚 Resources](#resources)
 
 ---
+
+
+<p align="right"><a href="#top">⬆️ Back to Top</a></p>
+
 
 <h2 id="introduction">🎓 Introduction</h2>
 
@@ -101,7 +107,9 @@ Docker uses a client-server architecture with these main components:
 - **Microservices**: Deploying and scaling independent services
 - **CI/CD**: Integration with continuous delivery pipelines
 
-## Docker Fundamentals
+
+<p align="right"><a href="#top">⬆️ Back to Top</a></p>
+
 
 <h2 id="docker-fundamentals">🛠️ Docker Fundamentals</h2>
 
@@ -250,6 +258,10 @@ Docker uses a layered filesystem to build images. Each instruction in a Dockerfi
 - Shared layers are stored once
 - Best practice: Order instructions from least to most frequently changed
 
+
+<p align="right"><a href="#top">⬆️ Back to Top</a></p>
+
+
 <h2 id="docker-compose-introduction">🔄 Docker Compose Introduction</h2>
 
 ### What is Docker Compose?
@@ -325,6 +337,8 @@ networks:
 - **Volume Inspection**: `docker volume inspect <volume>`
 
 
+<p align="right"><a href="#top">⬆️ Back to Top</a></p>
+
 
 <h2 id="hands-on-docker-projects">🚀 Hands-on Docker Projects</h2>
 
@@ -371,6 +385,10 @@ This advanced project demonstrates a real-world ML service using Docker Compose 
 - Handle persistent data
 
 For more details on the project, please refer to [Project 3 Documentation](3-text-extractor/README.md)
+
+
+<p align="right"><a href="#top">⬆️ Back to Top</a></p>
+
 
 <h2 id="docker-for-ml-projects">🤖 Docker for ML Projects</h2>
 
@@ -450,6 +468,10 @@ EXPOSE 8000
 CMD ["python3", "serve.py"]
 ```
 
+
+<p align="right"><a href="#top">⬆️ Back to Top</a></p>
+
+
 <h2 id="modern-python-tooling-uv">⚡ Modern Python Tooling uv</h2>
 
 `uv` is an extremely fast Python package and project manager written in Rust. It aims to be a modern replacement for tools like pip, pip-tools, poetry, virtualenv and more. With speeds 10-100x faster than pip for dependency installation, it brings modern package management capabilities while maintaining backward compatibility with existing Python tooling.
@@ -524,6 +546,9 @@ RUN uv pip install -r requirements.txt
 # ... rest of Dockerfile
 ```
 
+<p align="right"><a href="#top">⬆️ Back to Top</a></p>
+
+
 <h2 id="resources">📚 Resources</h2>
 
 ### Docker Resources
@@ -551,6 +576,10 @@ RUN uv pip install -r requirements.txt
 - [Introduction to Docker](https://www.datacamp.com/courses/introduction-to-docker)
 - [Intermediate Docker](https://www.datacamp.com/courses/intermediate-docker)
 
+
+<p align="right"><a href="#top">⬆️ Back to Top</a></p>
+
+
 <h2 id="contributing">👥 Contributing</h2>
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
@@ -568,6 +597,9 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 - Fix bugs or typos
 - Add content for additional ML frameworks
 - Enhance visuals and diagrams
+
+<p align="right"><a href="#top">⬆️ Back to Top</a></p>
+
 
 <h2 id="license">📄 License</h2>
 
